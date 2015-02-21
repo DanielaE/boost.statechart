@@ -78,6 +78,7 @@ struct EvGetElapsedTime : sc::event< EvGetElapsedTime >
     }
 
   private:
+    EvGetElapsedTime& operator=(const EvGetElapsedTime&);
     double & time_;
 };
 
