@@ -70,6 +70,7 @@ struct rtti_policy
       bool operator<=( id_type right ) const { return !( right < *this ); }
 
     private:
+      id_type& operator=(const id_type&);
       ////////////////////////////////////////////////////////////////////////
       const std::type_info & id_;
   };
